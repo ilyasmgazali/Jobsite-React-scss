@@ -1,0 +1,100 @@
+.nav{
+    display: grid;
+    
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2, min-content);//this is where mobile dropdown appear
+
+    background-color: var(--alpha);
+
+    &__leftBlock{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        
+        display: flex;
+        align-items: center;
+        padding: 12rem;
+    }
+    &__icons{
+        grid-row: 1/2;
+        grid-column: 3/4;
+
+        display: flex;
+        align-items: center;
+        padding: 12rem;
+        li {
+           margin-left: 20rem;
+        }
+    }
+    &__droplist{
+        grid-row:2/3;
+        grid-column: 1/-1;
+
+        background-color: var(--light);
+        display:none;
+    }
+    &__toggle{
+        display:none;
+    }
+    &__hamburger{
+        margin-right: 10rem;
+    }
+    &__leftBlock img{
+        //display:block;
+        padding-right: 5rem;
+    }
+    &__logo{
+        color: var(--delta);
+        font-weight: bold;
+    }
+    &__savedcount{
+        position: absolute; //has its own position with the <li>
+        padding: 2rem 6rem 3rem 6rem;
+        border-radius: 50%;
+        background-color: var(--alert);
+        color: var(--delta);
+        font-weight: bold;
+        display: inline-block; //might not need it
+        transform: translate(-5rem, -10rem); //move top (X) right (Y)
+    }
+    &__toggle:checked ~ &__droplist{ //if "checked", this method is considered a hack or pure CSS solution
+        display:block; //so drop down menu
+        li {
+            padding: 15rem 10rem;
+            border-bottom: 1px var(--delta) solid;
+        }
+    }
+    // mobile first SCSS
+    @include respond-to('small'){
+        //might be cause of horizonal nave error,, create a new responsive, or use React/ Material UI
+        //might be cause of horizonal nave error
+        //might be cause of horizonal nave error
+        grid-template-columns: 1fr min-content minmax(460rem, auto) min-content 1fr; //should be 590 rem, test to see if I solved problem it makes it smalle
+        
+        &__leftBlock{
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+        &__droplist{
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+
+            display: flex;
+            align-items: center;
+            background-color: var(--alpha);
+            color: var(--delta);
+            li {
+                margin-left: 20rem;
+            }
+        }
+        &__icons{
+            grid-row: 1 / 2;
+            grid-column: 4 / 5;
+        }
+        &__hamburger{ //for nav, only displays after small i.e. large
+            display: none;
+        }
+    }
+    //@include respond-to('medium'){
+    //    grid-template-columns: 1fr min-content minmax(600rem, auto) min-content 1fr; //should be 590 rem, test to see if I solved problem it makes it smalle
+    //}
+}
