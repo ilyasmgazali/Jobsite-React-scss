@@ -9,9 +9,9 @@ import { BrowserRouter, useNavigate } from 'react-router-dom';
 function App() {
   let navigate = useNavigate
   return (
-    <>
-      <BrowserRouter navigate={navigate}> 
-        <Homepage/>      
+    < >
+      <BrowserRouter navigate={navigate}>
+        <Homepage/>
       </BrowserRouter>
     </>
   );
