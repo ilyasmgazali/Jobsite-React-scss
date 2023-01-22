@@ -1,0 +1,11 @@
+{    
+// output: generate files to ...
+    // ~ = path starts relative from scss-file
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../../src/Styles/css"
+        }
+    ]
+}

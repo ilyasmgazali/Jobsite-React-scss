@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 
-import "../../Styles/main.css"
+import "../../Styles/css/main.css"
 
 import HamburgerImage from "../../Images/Hamburger.svg"
 import MagnifyingGlass from "../../Images/magnifying-glass 1.svg"

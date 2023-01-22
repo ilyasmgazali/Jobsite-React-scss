@@ -3,7 +3,7 @@
     background-color: var(--light);
 
     &--bgimg{
-        background-image: url(/Images/hero-small.svg);
+        background-image: url(../../Images/hero-small.svg);
         background-repeat:no-repeat;
         background-size: cover;
         width: 100%;
@@ -23,7 +23,7 @@
     @include respond-to("small"){
         //padding: 80rem;
         &--bgimg{
-            background-image: url(../../images/hero-small.svg); //looked better so stuck with smaller image
+            background-image: url(../../Images/hero-small.svg); //looked better so stuck with smaller image
         }
         &__wrap{
             //max-width: 895rem; 

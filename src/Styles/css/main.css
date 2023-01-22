@@ -514,6 +514,42 @@ h1 {
   }
 }
 
+.hero {
+  padding: 10rem;
+  background-color: var(--light);
+}
+.hero--bgimg {
+  background-image: url(../../Images/hero-small.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+}
+.hero h1 {
+  font-size: 26rem;
+  color: var(--light);
+  line-height: 30rem;
+  margin-bottom: 15rem;
+}
+.hero h2 {
+  font-size: 19rem;
+  color: var(--gamma);
+}
+@media (min-width: 767px) {
+  .hero--bgimg {
+    background-image: url(../../Images/hero-small.svg);
+  }
+  .hero__wrap {
+    max-width: 770rem;
+    margin: 10rem auto;
+  }
+  .hero h1 {
+    font-size: 38rem;
+    max-width: 500rem;
+    line-height: 40rem;
+  }
+}
+
 .footer {
   background-color: var(--gamma);
   color: var(--delta);
