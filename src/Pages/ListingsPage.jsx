@@ -1,17 +1,33 @@
 import React from 'react'
 
-import Navbar2 from '../Components/nav/Navbar2';
-import Footer from '../Components/nav/Footer';
+import Nav from '../Components/nav/Navbar2'
+import Hero from '../Components/hero/hero'
+
+import Footer from '../Components/footer/Footer'
+import Cookie from '../Components/cookie/cookie'
+import Container from '../Components/container/container'
+
+import ListingFilter from '../Components/listings_filter/listings_filter'
+import Filter from '../Components/filter/filter'
+import Listings from '../Components/listings/listings'
 
 export default function ListingsPage() {
   return (
     <div className="App"> 
-        {/**     <Navbar/>{/** This one is the tutorial one */}  
-
-        {/**  <NavbarTest/> */}
-
-        <Navbar2/>{/** This is the main one to be used */}
-        <Footer/>
+      <>
+          <section>
+            <Nav />
+            <Hero />
+            <Container>
+              <ListingFilter >
+                <Filter />
+                <Listings />
+              </ListingFilter >
+            </Container>
+            <Cookie />
+          </section>
+          <Footer/>
+      </>
     </div>
   )
 }
