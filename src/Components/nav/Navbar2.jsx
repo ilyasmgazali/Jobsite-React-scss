@@ -3,12 +3,14 @@ import {Link} from "react-router-dom"
 
 import "../../Styles/css/main.css"
 
-import HamburgerImage from "../../Images/Hamburger.svg"
-import MagnifyingGlass from "../../Images/magnifying-glass 1.svg"
-import BellNoNotification from "../../Images/bell-no-notification.svg"
-import Star1 from "../../Images/star 1.svg"
-import User from "../../Images/user.svg"
-import Logout from "../../Images/logout.svg"
+import {
+    HamburgerImage,
+    MagnifyingGlass,
+    BellNoNotification,
+    Star1,
+    User,
+    Logout
+} from '../images';
 
 export default function Navbar2() {
   return (
@@ -27,15 +29,15 @@ export default function Navbar2() {
         </ul>
         <ul className="nav__icons">
             <li><Link className='a' id='a'  to="/listings"><img src={MagnifyingGlass} alt=""/></Link></li>
-            <li><Link className='a' id='a' to="/"><img src={BellNoNotification} alt=""/></Link></li>
-            <li><Link className='a' id='a' to="/"><img src={Star1} alt=""/></Link><span className="nav__savedcount">1</span></li>
-            <li><Link className='a' id='a' to="/"><img src={User} alt=""/></Link></li>
-            <li><Link className='a' id='a' to="/"><img src={Logout} alt=""/></Link></li>
+            <li><Link className='a' id='a' to="/notifications"><img src={BellNoNotification} alt=""/></Link></li>
+            <li><Link className='a' id='a' to="/saved-jobs"><img src={Star1} alt=""/></Link><span className="nav__savedcount">1</span></li>
+            <li><Link className='a' id='a' to="/profile"><img src={User} alt=""/></Link></li>
+            <li><Link className='a' id='a' to="/login"><img src={Logout} alt=""/></Link></li>
         </ul>
         <ul className="nav__droplist">
             <li><Link className='a' id='a' to="/">Home</Link></li>
-            <li><Link className='a' id='a' to="/Job-Listings">Job listings</Link></li>
-            <li><Link className='a' id='a'  to="/Job-Listings">Job applications</Link></li>
+            <li><Link className='a' id='a' to="/listings">Job listings</Link></li>
+            <li><Link className='a' id='a'  to="/applications">Job applications</Link></li>
         </ul>
     </nav>
   )

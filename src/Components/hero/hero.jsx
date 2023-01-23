@@ -3,8 +3,6 @@ import React from 'react'
 //import "../../Styles/main.css"
 import "../../Styles/css/main.css"
 
-import HamburgerImage from "../../Images/Hamburger.svg"
-
 export default function hero() {
   return (
 

@@ -1,11 +1,11 @@
 import React from 'react'
 
-import StarSaved from "../../Images/star_fav.svg"
-
-import Money from "../../Images/money.svg"
-import Location from "../../Images/location.svg"
-import Timer from "../../Images/timer.svg"
-
+import {
+  StarSaved,
+  Money,
+  Location,
+  Timer,
+} from '../images';
 
 export default function apply() {
   return (

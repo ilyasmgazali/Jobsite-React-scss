@@ -1,13 +1,13 @@
 import React from 'react'
 
-import TechSmall from "../../Images/luca-bravo-XJXWbfSo2f0-unsplash 1.svg"
-// TechBIG
+import {
+  TechSmall,
+  
+  EngSmall,
+  EngBig,
 
-import EngSmall from "../../Images/ricardo-gomez-angel-sYK-jN0sKBY-unsplash small.svg"
-import EngBig from "../../Images/ricardo-gomez-angel-sYK-jN0sKBY-unsplash big.svg"
-
-import Health from "../../Images/lucas-vasques-9vnACvX2748-unsplash 1.svg"
-//import HealthBig from "../../Images/ricardo-gomez-angel-sYK-jN0sKBY-unsplash big.svg"
+  Health,
+} from '../images';
 
 
 export default function sector() {
@@ -27,9 +27,9 @@ export default function sector() {
           </picture>
           <div className="sector__name">Technology</div>
           <ul className="sector__list">
-            <li><a href="">Accountancy jobs <span>5, 757</span></a></li>
-            <li><a href="">Acturial jobs <span>5, 757</span></a></li>
-            <li><a href="">Admin, Secretarial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Accountancy jobs <span>5, 757</span></a></li>
+            <li><a href=".">Acturial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Admin, Secretarial jobs <span>5, 757</span></a></li>
           </ul>
         </div>
         {/**  <!-- SECTOR 2 --> */} 
@@ -41,9 +41,9 @@ export default function sector() {
           </picture>
           <div className="sector__name">Engineering</div>
           <ul className="sector__list">
-            <li><a href="">Accountancy jobs <span>5, 757</span></a></li>
-            <li><a href="">Acturial jobs <span>5, 757</span></a></li>
-            <li><a href="">Admin, Secretarial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Accountancy jobs <span>5, 757</span></a></li>
+            <li><a href=".">Acturial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Admin, Secretarial jobs <span>5, 757</span></a></li>
           </ul>
         </div>
 
@@ -56,23 +56,22 @@ export default function sector() {
           </picture>
           <div className="sector__name">Technology</div>
           <ul className="sector__list">
-            <li><a href="">Accountancy jobs <span>5, 757</span></a></li>
-            <li><a href="">Acturial jobs <span>5, 757</span></a></li>
-            <li><a href="">Admin, Secretarial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Accountancy jobs <span>5, 757</span></a></li>
+            <li><a href=".">Acturial jobs <span>5, 757</span></a></li>
+            <li><a href=".">Admin, Secretarial jobs <span>5, 757</span></a></li>
           </ul>
         </div>
         {/**  <!-- MOBILE VIEW - RESPONSIVE ONLY --> */}
-        <a href="">
+        <a href=".">
           <div className="sector__browse">Browse all sectors</div>
         </a>
         <ul className="sector__mlist">
-          <li><a href="">Accountancy jobs <span>5, 757</span></a></li>
-          <li><a href="">Acturial jobs <span>5, 757</span></a></li>
-          <li><a href="">Admin, Secretarial jobs <span>5, 757</span></a></li>
+          <li><a href=".">Accountancy jobs <span>5, 757</span></a></li>
+          <li><a href=".">Acturial jobs <span>5, 757</span></a></li>
+          <li><a href=".">Admin, Secretarial jobs <span>5, 757</span></a></li>
         </ul>
       </div>
 
     </div>
-  
   )
 }

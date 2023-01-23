@@ -4,6 +4,6 @@ import "../../Styles/css/main.css"
 
 export default function Footer() {
   return (
-    <footer className="footer">COPYRIGHT &copy; jobplus 2020</footer>
+    <footer className="footer">COPYRIGHT &copy; jobplus 2022</footer>
   )
 }
